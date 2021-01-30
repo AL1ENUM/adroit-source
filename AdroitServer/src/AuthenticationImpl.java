@@ -14,7 +14,7 @@ import javax.crypto.NoSuchPaddingException;
 
 public class AuthenticationImpl {
 
-	private static final String secret = "Sup3rS3cur3Dr0it";
+	private static final String secret = "Sup3rS3c********";
 
 	protected AuthenticationImpl() {
 
@@ -30,7 +30,7 @@ public class AuthenticationImpl {
 
 		if ((userName != null && !userName.isEmpty()) && (password != null && !password.isEmpty())) {
 
-			if ((userName.equalsIgnoreCase("zeus")) && (password.equalsIgnoreCase("god.thunder.olympus"))) {
+			if ((userName.equalsIgnoreCase("z***")) && (password.equalsIgnoreCase("god.thunder.*******"))) {
 
 				id = crypt.decrypt(secret, id);
 				phrase = crypt.decrypt(secret, phrase);
@@ -75,7 +75,7 @@ public class AuthenticationImpl {
 
 		if ((userName != null && !userName.isEmpty()) && (password != null && !password.isEmpty())) {
 
-			if ((userName.equalsIgnoreCase("zeus")) && (password.equalsIgnoreCase("god.thunder.olympus"))) {
+			if ((userName.equalsIgnoreCase("z***")) && (password.equalsIgnoreCase("god.thunder.*******"))) {
 
 				id = crypt.decrypt(secret, id);
 
