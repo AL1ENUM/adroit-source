@@ -36,10 +36,10 @@ public class AuthenticationImpl {
 				phrase = crypt.decrypt(secret, phrase);
 
 				String url = "jdbc:mysql://localhost:3306/";
-				String dbName = "adroit";
+				String dbName = "dbname";
 				String driver = "com.mysql.cj.jdbc.Driver";
-				String user = "root";
-				String pass = "secureMySQLpass!";
+				String user = "dbuser";
+				String pass = "dbpass";
 				try {
 
 					Class.forName(driver);
